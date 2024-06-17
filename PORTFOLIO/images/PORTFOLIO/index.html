@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PERSONAL PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd3de5834a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Service </a></li>
+                <li><a href="#">Portfolio </a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX DESIGNER</p>
+            <h1>Hi, I'm <span>Rahul</span> Roy<br>From Agartala.</h1>
+        </div>
+    </div>
+</div>
+<!----------------------about--------------------->
+<div id="about">
+    <div class="container"></div>
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/user.png">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm a Full-Stack developer|designer & tech enthusiast.<br>gymrat,powerlifting athlete.<br>coding,videography,editing,travelling.</p>
+        
+       <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+         </div>
+         <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>C++|JAVA</span><br>Embedded C++<br>advanced Java</li>
+                <li><span>HTML|CSS|JS</span><br>Markup and modern UI design<br>React javaScript</li>
+                <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>App Development</span><br>Building Android/ios apps</li>
+            </ul>
+         </div><div class="tab-contents" id="experience">
+            <ul>
+                <li><span>1 month</span><br>Industrial training at NIELET </li>
+                <li><span>2022</span><br>Web App Development Technologies at NIELET</li>
+            </ul>
+         </div><div class="tab-contents" id="education">
+            <ul>
+                <li><span>ONGOING</span><br>B.TECH in Computer Science and Engineering</li>
+                <li><span>2019</span><br>Matriculation from ICSE</li>
+                <li><span>2021</span><br>HigherSecondary from CBSE</li>
+                <li><span>2020-2021</span><br>One Year Diploma in Computer Application</li>
+            </ul>
+         </div>
+     </div>
+    </div>
+</div>
+<!------------services----------->
+<div id="services">
+    <div class="services">
+        <h1 class="sub-title">My Services</h1>
+        <p class="text" 30px="" of="" padding-top<="" p="" style="
+    padding-top: 40px;
+">
+        </p>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque adipisci enim, ad, tempore a consequatur fuga perspiciatis aliquam velit quidem, mollitia culpa magni dolor qui. Exercitationem veritatis voluptates culpa delectus!</p>
+                 <a href="#">learn more</a>
+             </div>
+             <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque adipisci enim, ad, tempore a consequatur fuga perspiciatis aliquam velit quidem, mollitia culpa magni dolor qui. Exercitationem veritatis voluptates culpa delectus!</p>
+                 <a href="#">learn more</a>
+             </div>
+             <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque adipisci enim, ad, tempore a consequatur fuga perspiciatis aliquam velit quidem, mollitia culpa magni dolor qui. Exercitationem veritatis voluptates culpa delectus!</p>
+                 <a href="#">learn more</a>
+             </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+   }
+
+</script>
+    
+</body>
+</html>
